@@ -21,9 +21,13 @@ Plug 'tpope/vim-surround'      " Easily change quotes, parens, etc
 Plug 'tpope/vim-sensible'      " Sensible defaults
 Plug 'tpope/vim-sleuth'        " Indent detection
 Plug 'w0rp/ale'                " Async linting
+Plug 'zxqfl/tabnine-vim'       " Tab complete
+Plug 'nanotech/jellybeans.vim' " Color
 call plug#end()
 
 filetype plugin indent on
 set expandtab " Spaces instead of tabs
 set tabstop=4
 set shiftwidth=4
+
+colorscheme jellybeans
