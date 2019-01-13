@@ -1,0 +1,5 @@
+To override sensible incsearch:
+
+0effect@juturna:~/.vim/after/plugin$ cat sensible.vim
+set noincsearch
+
