@@ -23,6 +23,7 @@ Plug 'tpope/vim-sleuth'        " Indent detection
 Plug 'w0rp/ale'                " Async linting
 Plug 'zxqfl/tabnine-vim'       " Tab complete
 Plug 'nanotech/jellybeans.vim' " Color
+Plug 'elixir-editors/vim-elixir' " Elixir
 call plug#end()
 
 filetype plugin indent on
@@ -31,3 +32,14 @@ set tabstop=4
 set shiftwidth=4
 
 colorscheme jellybeans
+
+let g:ale_linters = {
+  \   'elixir': ['credo', 'mix'],
+  \}
+let g:ale_fixers = {
+  \   'elixir': [
+  \       'mix_format',
+  \   ],
+  \}
+let g:ale_fix_on_save = 1
+
